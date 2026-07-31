@@ -1,0 +1,7 @@
+{
+  "name": "appasistencia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
