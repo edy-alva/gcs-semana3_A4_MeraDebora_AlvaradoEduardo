@@ -1,6 +1,8 @@
 # RF-026 – Seguimiento del Prestador de Servicios
 
+
 ## Casos de prueba
+
 | ID | Caso de prueba | Resultado esperado | Resultado |
 |---|---|---|---|
 | CP-001 | Usuario solicita un servicio | La solicitud se registra correctamente | PASS |
@@ -13,3 +15,14 @@
 | CP-008 | Servicio finalizado | El seguimiento deja de actualizarse | PASS |
 | CP-009 | Usuario no autorizado intenta consultar ubicación | El sistema rechaza el acceso | PASS |
 | CP-010 | Prestador cancela el servicio | Se detiene el seguimiento | PASS |
+
+
+## Pruebas de seguridad
+
+| ID | Prueba | Resultado esperado |
+|---|---|---|
+| SEG-001 | Acceder a ubicación sin autenticación | Acceso rechazado |
+| SEG-002 | Usuario consulta ubicación de otro servicio | Acceso rechazado |
+| SEG-003 | Consultar ubicación después de finalizar el servicio | Información no actualizada |
+| SEG-004 | Transmitir información de ubicación | Comunicación protegida |
+| SEG-005 | Manipular identificador del servicio | El sistema rechaza la solicitud no autorizada |
