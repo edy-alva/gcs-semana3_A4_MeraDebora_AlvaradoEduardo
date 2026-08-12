@@ -1,3 +1,6 @@
+# RF-026 – Seguimiento del Prestador de Servicios
+
+## Casos de prueba
 | ID | Caso de prueba | Resultado esperado | Resultado |
 |---|---|---|---|
 | CP-001 | Usuario solicita un servicio | La solicitud se registra correctamente | PASS |
